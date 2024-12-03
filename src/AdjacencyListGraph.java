@@ -2,7 +2,7 @@ import java.util.List;
 import java.util.Map;
 
 class AdjacencyListGraph implements Graph {
-    private Map<String, List<String>> adjacencyList;
+    private Map<String, List<Edge>> adjacencyList;  // Vertex -> List of Edges
     private boolean isDirected;
 
     public AdjacencyListGraph(boolean isDirected) {
@@ -16,8 +16,18 @@ class AdjacencyListGraph implements Graph {
 
     @Override
     public void addEdge(String source, String destination) {
-        // TODO: Add edge between source and destination
-        // Remember to handle both directed and undirected cases
+        // TODO: Add unweighted edge (default weight of 1)
+    }
+
+    @Override
+    public void addWeightedEdge(String source, String destination, int weight) {
+        // TODO: Add edge with specified weight
+    }
+
+    @Override
+    public int getWeight(String source, String destination) {
+        // TODO: Return weight of edge between source and destination
+        return 0;
     }
 
     @Override
