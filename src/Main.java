@@ -5,6 +5,13 @@ public class Main {
             An edge represents the relationship between entities
      */
     public static void main(String[] args) {
+        MyMaps mapMatrix = new MyMaps(MyMaps.AdjacencyType.MATRIX, false);
+        MyMaps mapList = new MyMaps(MyMaps.AdjacencyType.LIST, true);
+
+        mapMatrix.printLocations();
+        mapList.printLocations();
+
+
       /*
            I know coming back from break is rough, here are some incredible jokes just for you guys.
            (These WERE the best ones I could find)
